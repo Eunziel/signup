@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(main/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+}
+.text{
+    margin-top: 120px;
+    width: 50%;
+    color: #fff;
+}
+.text h2{
+    width: 70%;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.text p{
+    width: 85%;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+.row{
+    width: 40%;
+}
+.card{
+    background-color: #fff;
+    padding: 20px 30px;
+}
+.box{
+    background-color: hsl(249, 32%, 49%);
+    padding: 1em 2em;
+    text-align: center;
+}
+.box, .text-two{
+    margin-bottom: 20px;
+}
+.btn-one, .btn-three{
+    text-decoration: none;
+}
+.btn-two{
+    display: flex;
+    padding: 1em 1em;
+    font-weight: 700;
+}
+.btn-two, .btn-three{
+    margin-top: 20px;
+    width: 100%;
+}
+.btn-three{
+    background-color: hsl(154, 59%, 51%);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.btn-three, .btn-one{
+    color: #fff;
+}
+.text-two{
+    margin-top: 10px;
+    font-size: 10px;
+    margin-left: -30px;
+    text-align: center;
+}
+.box span, .text-two{
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+}
+.mini{
+    color: hsl(0, 100%, 74%);
+}
+.box, .card, .btn-three{
+    border-radius: 10px;
+}
+.box, .card{
+    box-shadow: 0px 4px 1px 0px rgb(224, 104, 104);
+}
+.btn-three:hover{
+    background-color: lightgreen;
+}
+/* 
+.btn-two:focus {
+    border: 1px solid red;
+    outline: none;
+} */
+@media screen and (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        width: 100%;
+    }
+    .text h2{
+        font-size: 20px;
+        margin-left: 100px;
+        width: 60%;
+        margin-top: 200px;
+    } 
+    .text p{
+        width: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        margin-bottom: 60px;
+    }
+    .row{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .text{
+        width: 100%;
+    }
+    .text h2{
+        font-size: 20px;
+        margin-left: 100px;
+        width: 60%;
+        margin-top: 200px;
+    } 
+    .text p{
+        width: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        margin-bottom: 60px;
+    }
+    .row{
+        width: 90%;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}
